@@ -12,7 +12,8 @@
 
 <?php wp_nav_menu('menu=Top Menu'); ?>
 
-<h1>Welcome to the standard market company</h1>
+<h1>Welcome</h1>
+<h2>to the standard market company</h2>
 <?php wp_nav_menu('menu=About'); ?>
 
 <div>
