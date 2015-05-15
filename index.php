@@ -1,7 +1,8 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Nikita
- * Date: 5/15/2015
- * Time: 1:11 PM
- */
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<?php get_header(); ?>
+<body <?php body_class(); ?>>
+
+<?php get_footer(); ?>
+</body>
+</html>
