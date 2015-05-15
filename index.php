@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
 
-<?php wp_nav_menu('depth=1'); ?>
+<?php wp_nav_menu('menu=Top Menu'); ?>
 
 <?php get_footer(); ?>
 </body>
