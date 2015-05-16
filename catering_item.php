@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
 
-<?php wp_nav_menu('menu=Top Menu'); ?>
+<?php get_template_part( 'menu', 'top' ); ?>
 
 <?php wp_nav_menu('menu=Catering'); ?>
 
@@ -77,5 +77,6 @@
     </div>
 </div>
 
+<?php get_footer(); ?>
 </body>
 </html>

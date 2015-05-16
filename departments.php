@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
 
-<?php wp_nav_menu('menu=Top Menu'); ?>
+<?php get_template_part( 'menu', 'top' ); ?>
 
 <h1>Departments</h1>
 <?php wp_nav_menu('menu=Departments'); ?>
