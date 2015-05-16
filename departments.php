@@ -17,9 +17,9 @@
 
 <div>
     <?php
-    $image = get_field('department_icon');
-    if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    $department_icon = get_field('department_icon');
+    if( !empty($department_icon) ): ?>
+        <img src="<?php echo $department_icon['url']; ?>" alt="<?php echo $department_icon['alt']; ?>" />
     <?php endif; ?>
 
     <?php
