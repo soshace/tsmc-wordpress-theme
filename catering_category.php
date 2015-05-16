@@ -54,12 +54,14 @@
             $post_cover = get_field('cover');
             ?>
             <li>
-                <?php if (!empty($post_cover)): ?>
-                    <img src="<?php echo $post_cover['url']; ?>"/>
-                <?php endif ?>
-                <div>
-                    <?php the_title(); ?>
-                </div>
+                <a href="<?php the_permalink(); ?>">
+                    <?php if (!empty($post_cover)): ?>
+                        <img src="<?php echo $post_cover['url']; ?>"/>
+                    <?php endif ?>
+                    <span>
+                        <?php the_title(); ?>
+                    </span>
+                </a>
             </li>
         <?php endwhile;
         endif;
