@@ -27,7 +27,7 @@
                             <option>Choose subject2</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group contact-page__sex">
                         <label class="checkbox-inline">
                             <input type="checkbox" id="inlineCheckbox1" value="option1"> Mr
                         </label>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" rows="3" id="message"></textarea>
+                        <textarea class="form-control" rows="9" id="message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-default">SEND</button>
                 </form>
@@ -64,44 +64,12 @@
             <div class="col-lg-6 col-md-6">
                 <h4>store locations & opening hours</h4>
 
-
-                <h5>BRISBANE - gasworks</h5>
-
-                <p>76 Skyring Terrace, Newstead, Queenland 4006<br/>
-                    p. 07 3252 3477</p>
-
-                <h6>opening hours</h6>
-
-                <p>Mon - Fri 7am - 9pm<br/>
-                    Sat - Sun 9am - 6pm</p>
-
-
-                <h5>BRISBANE - JAMES STREET MARKETS</h5>
-
-                <p>20-22 James Street, Fortitude Valley, Queensland 4006<br/>
-                    Fruit & Veg p. 07 3252 3477<br/>
-                    Meats p. 07 3854 0440<br/>
-                    Quench p. 07 3252 9922</p>
-
-                <h6>opening hours</h6>
-
-                <p>Mon - Fri 8am - 8pm<br/>
-                    Sat - Sun 9am - 6pm</p>
-
-
-                <h5>gold coast - ferry road MARKETS</h5>
-
-                <p>107 Ferry Road, Southport, Queensland 4215<br/>
-                    Fruit & Veg p. 07 5591 5361<br/>
-                    Breads p. 07 5532 4749<br/>
-                    Meats p. 07 5591 5416<br/>
-                    Deli p. 07 5591 5066<br/>
-                    Quench p. 07 5591 5927</p>
-
-                <h6>opening hours</h6>
-
-                <p>Mon - Fri 8am - 8pm<br/>
-                    Sat - Sun 9am - 6pm</p>
+                <?php
+                if (have_posts()) : while (have_posts()) : the_post();
+                    the_content();
+                endwhile;
+                endif;
+                ?>
             </div>
         </div>
     </div>

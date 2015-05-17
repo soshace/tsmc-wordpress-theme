@@ -1549,11 +1549,27 @@ hr.firstWithoutHeader{
 }
 
 .contact-page {
-    padding: 127px 0 30px 0;
+    padding: 135px 0 30px 0;
+}
+
+.contact-page h4 {
+    color: #3d4040;
+    padding-bottom: 15px;
 }
 
 .contact-page h5 {
     color: #c7a46f;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.contact-page h6 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.contact-page p {
+    padding-bottom: 6px;
 }
 
 .contact-page .form-control {
@@ -1563,7 +1579,7 @@ hr.firstWithoutHeader{
 .contact-page .form-control[type="text"],
 .contact-page .form-control[type="email"],
 .contact-page select.form-control {
-    height: 29px;
+    height: 32px;
 }
 
 .contact-page button {
@@ -1571,4 +1587,18 @@ hr.firstWithoutHeader{
     color: #fff;
     float: right;
     border: none;
+    padding: 5px 33px;
+}
+
+.contact-page__sex {
+    height: 30px;
+}
+
+.contact-page .form-group {
+    margin-bottom: 17px;
+}
+
+.contact-page__separator {
+    width: 85px;
+    display: inline-block;
 }
