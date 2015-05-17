@@ -12,7 +12,26 @@
 
 <?php get_template_part( 'menu', 'top' ); ?>
 
-<?php wp_nav_menu('menu=Catering'); ?>
+<?php
+$menuOptions = array(
+    'theme_location' => '',
+    'menu' => 'Catering',
+    'container' => 'ul',
+    'container_class' => '',
+    'container_id' => '',
+    'menu_class' => 'headLinks',
+    'menu_id' => '',
+    'echo' => true,
+    'fallback_cb' => 'wp_page_menu',
+    'before' => '',
+    'after' => '',
+    'link_before' => '',
+    'link_after' => '',
+    'depth' => 1,
+    'walker' => ''
+);
+wp_nav_menu($menuOptions);
+?>
 
 <div>
     <?php
