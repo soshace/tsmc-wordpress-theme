@@ -12,7 +12,7 @@
 
 <?php get_template_part('menu', 'top'); ?>
 
-<div class="container mainArea">
+<div class="container mainArea departments-page">
     <?php get_template_part('logo', 'top'); ?>
 
     <div>

@@ -520,7 +520,7 @@ a.twitter img{
 .main-content p {
     font-family: museosans;
     color: #3d4040;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 21px;
@@ -1497,57 +1497,6 @@ hr.firstWithoutHeader{
     }
 }
 
-.catering_click_on .productContainer img{
-    width: 100%;
-}
-
-.catering_click_on .productContainer p {
-    width: 100%;
-    background-color: #3d4040;
-    border-radius: 0 0 10px 10px;
-    font-family: brandon_grotesquemedium;
-    font-weight: 100;
-    height: 43px;
-    color: white;
-    display: -ms-flexbox;
-    -ms-flex-align: center;
-    display: -moz-box;
-    -moz-box-align: center;
-    display: -webkit-box;
-    -webkit-box-align: center;
-    line-height: 16px;
-    padding: 0 20px;
-}
-
-.catering_click_on .productContainer{
-    margin-top: 14px;
-}
-
-.catering_click_on .inputQuantity{
-    float: right;
-}
-
-
-.catering_click_on .productPrice p{
-    float: left;
-}
-
-.catering_click_on .inputQuantity input{
-    width: 100px;
-    margin: 0;
-    padding: 5px 0 5px 6px;
-    background-color: white;
-    border: 1px solid #3d4040;
-    border-radius: 5px 5px 5px 5px;
-    outline: none;
-    font-size: 13px;
-    font-weight: 500;
-    color: #3d4040;
-    vertical-align: top;
-    height: 25px;
-    font-family: museosans;
-}
-
 .contact-page {
     padding: 135px 0 30px 0;
 }
@@ -1602,3 +1551,171 @@ hr.firstWithoutHeader{
     width: 85px;
     display: inline-block;
 }
+
+.catering_click_on .productContainer img{
+    width: 100%;
+}
+
+.catering_click_on .productContainer p {
+    width: 100%;
+    background-color: #3d4040;
+    border-radius: 0 0 10px 10px;
+    font-family: brandon_grotesquemedium;
+    font-weight: 100;
+    height: 43px;
+    color: white;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    display: -moz-box;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    line-height: 16px;
+    padding: 0 20px;
+}
+
+.catering_click_on .productContainer{
+    margin-top: 14px;
+    margin-bottom: 35px;
+}
+
+.catering_click_on .inputQuantity{
+    float: right;
+    margin-right: 199px;
+}
+
+.catering_click_on .productPrice p{
+    float: left;
+    clear: both;
+}
+
+.catering_click_on .inputQuantity input{
+    width: 58px;
+    padding: 5px 0 5px 6px;
+    background-color: white;
+    border: 1px solid #3d4040;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3d4040;
+    vertical-align: top;
+    height: 30px;
+    font-family: museosans;
+    margin: -5px 0 0 9px;
+}
+
+.catering_click_on .productDefinition p {
+    margin-bottom: 24px;
+}
+
+.catering_click_on .productDefinition{
+    padding: 0 16px;
+}
+
+.catering_click_on .productDefinition .inputQuantity label{
+    font-family: museosans;
+    color: #3d4040;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+hr.yellow{
+    margin-top: 79px;
+    margin-bottom: 25px;
+    border-top: 1px solid #c7a46f;
+    clear: both;
+}
+
+.bottomButtons{
+    float: right;
+}
+
+.bottomButtons .customButton{
+    float: right;
+    margin: 0 5px;
+    height: 32px;
+    padding: 5px 16px 5px 16px;
+}
+
+.catering_click_on .leftSmallPart p {
+    font-family: museosans;
+    color: #3d4040;
+    line-height: 19px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.catering_click_on .leftSmallPart li {
+    list-style-type: none;
+}
+
+.catering_click_on .leftSmallPart ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.catering_click_on .leftSmallPart h3 {
+    margin-bottom: 20px;
+}
+
+.catering_click_on .leftSmallPart ul {
+    margin-top: 20px;
+}
+
+.catering_click_on .leftSmallPart a{
+    text-decoration: none;
+}
+
+.catering_click_on .leftSmallPart a p:hover{
+    font-weight: 600;
+}
+
+@media (max-width: 999px) {
+    .catering_click_on .inputQuantity {
+        margin-right: 0;
+    }
+}
+
+.catering_click_on .productDefinition li{
+    list-style-type: none;
+}
+
+.catering_click_on .productDefinition ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.departments-page {
+
+}
+
+.departments-page.mainArea .headText {
+    margin-top: 41px;
+}
+
+.departments-page h2 {
+    font-size: 37px;
+}
+
+.departments-page.mainArea ul.headLinks {
+    margin-top: 6px;
+}
+
+.departments-page .main-content {
+    padding: 28px 0 30px 0;
+}
+
+.departments-page .main-content h3 {
+    padding-top: 23px;
+    padding-bottom: 5px;
+}
+
+.departments-page .main-content p {
+    padding-bottom: 50px;
+}
+
