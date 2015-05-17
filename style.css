@@ -325,6 +325,7 @@ a.twitter img{
 
 .imageContainer {
     position: relative;
+    display: block;
 }
 
 .imageContainer img {

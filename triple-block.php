@@ -25,11 +25,11 @@
             query_posts('cat=20&posts_per_page=1');
 
             if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="imageContainer">
+                <a href="<?php the_permalink(); ?>" class="imageContainer">
                     <img src="<?php echo get_field('cover')['url'] ?>">
 
                     <p class="imageContainer_text"><?php the_title(); ?></p>
-                </div>
+                </a>
             <?php endwhile;
             endif; ?>
         </div>
@@ -40,11 +40,11 @@
             query_posts('cat=16,17,18,19&posts_per_page=1');
 
             if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="imageContainer">
+                <a href="<?php the_permalink(); ?>" class="imageContainer">
                     <img src="<?php echo get_field('cover')['url'] ?>">
 
                     <p class="imageContainer_text"><?php the_title(); ?></p>
-                </div>
+                </a>
             <?php endwhile;
             endif; ?>
         </div>
