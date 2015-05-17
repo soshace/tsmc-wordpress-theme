@@ -10,24 +10,57 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
 
-<?php get_template_part( 'menu', 'top' ); ?>
+<?php get_template_part('menu', 'top'); ?>
 
-<h1>Departments</h1>
-<?php wp_nav_menu('menu=Departments'); ?>
+<div class="container mainArea">
+    <?php get_template_part('logo', 'top'); ?>
 
-<div>
-    <?php
-    $department_icon = get_field('department_icon');
-    if( !empty($department_icon) ): ?>
-        <img src="<?php echo $department_icon['url']; ?>" alt="<?php echo $department_icon['alt']; ?>" />
-    <?php endif; ?>
+    <div>
+        <div class="headText">
+            <h2>Departments</h2>
+        </div>
+        <?php
+        $menuOptions = array(
+            'theme_location' => '',
+            'menu' => 'Departments',
+            'container' => 'ul',
+            'container_class' => '',
+            'container_id' => '',
+            'menu_class' => 'headLinks visible-lg visible-md',
+            'menu_id' => '',
+            'echo' => true,
+            'fallback_cb' => 'wp_page_menu',
+            'before' => '',
+            'after' => '',
+            'link_before' => '',
+            'link_after' => '',
+            'depth' => 1,
+            'walker' => ''
+        );
 
-    <?php
-    if (have_posts()) : while (have_posts()) : the_post();
-        the_content();
-    endwhile;
-    endif;
-    ?>
+        wp_nav_menu($menuOptions);
+        ?>
+    </div>
+
+    <div class="main-content">
+        <div class="row">
+            <div class="col-lg-2">
+                <?php
+                $department_icon = get_field('department_icon');
+                if (!empty($department_icon)): ?>
+                    <img src="<?php echo $department_icon['url']; ?>" alt="<?php echo $department_icon['alt']; ?>"/>
+                <?php endif; ?>
+            </div>
+            <div class="col-lg-10">
+                <?php
+                if (have_posts()) : while (have_posts()) : the_post();
+                    the_content();
+                endwhile;
+                endif;
+                ?>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php get_footer(); ?>
