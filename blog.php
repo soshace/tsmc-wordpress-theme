@@ -22,61 +22,128 @@ if (!empty($category)) {
 if (!empty($top_post)) {
     $top_post_id = $top_post->ID;
     $top_post_title = $top_post->post_title;
-
     if (have_posts()) : while (have_posts()) : the_post();
         $top_post_cover = get_field('cover', $top_post_id);
         $top_post_description = get_field('description', $top_post_id);
+        $top_post_link = get_permalink($top_post_id);
     endwhile;
     endif;
 }
 
 ?>
 
-<?php if (!empty($top_post)): ?>
-    <div>
-        <img src="<?php echo $top_post_cover['url']; ?>"/>
+<div class="container mainArea">
+    <?php get_template_part('logo', 'top'); ?>
 
-        <div><?php echo $top_post_title ?></div>
-        <div><?php echo $top_post_description ?></div>
-    </div>
-<?php endif; ?>
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3 visible-lg visible-md visible-sm">
+            <?php get_template_part('weekly', 'specials'); ?>
+        </div>
+        <div class="col-md-9 col-sm-9 col-xs-12">
+            <div class="rightBlog">
+                <div>
+                    <div class="headText">
+                        <h1>BLOG</h1>
+                    </div>
+                </div>
+                <hr>
+                <div class="main-content">
+                    <?php if (!empty($top_post)): ?>
+                        <a href="<?php echo $top_post_link; ?>">
+                            <img class="headImage" src="<?php echo $top_post_cover['url']; ?>"/>
 
-<?php
-if (!empty($category_id)) :
-    query_posts(array(
-        'posts_per_page' => 4,
-        'cat' => $category_id,
-        'paged' => (get_query_var('paged') ? get_query_var('paged') : 1),
-    ));
+                            <h3><?php echo $top_post_title ?></h3>
 
-    if (have_posts()) :?>
-        <ul>
-            <?php
-            while (have_posts()) : the_post();
-                $post_cover = get_field('cover');
-                $post_description = get_field('description');
-                ?>
-                <li>
-                    <a href="<?php the_permalink(); ?>">
-                        <?php if (!empty($post_cover)): ?>
-                            <img src="<?php echo $post_cover['url']; ?>"/>
-                        <?php endif ?>
-                        <span>
+                            <p><?php echo $top_post_description ?></p>
+                        </a>
+                    <?php endif; ?>
+                    <?php
+                    if (!empty($category_id)) :
+                        query_posts(array(
+                            'posts_per_page' => 4,
+                            'cat' => $category_id,
+                            'paged' => (get_query_var('paged') ? get_query_var('paged') : 1),
+                        ));
+
+                        if (have_posts()) :?>
+                            <ul>
+                                <?php
+                                while (have_posts()) : the_post();
+                                    $post_cover = get_field('cover');
+                                    $post_description = get_field('description');
+                                    ?>
+                                    <li>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php if (!empty($post_cover)): ?>
+                                                <img src="<?php echo $post_cover['url']; ?>"/>
+                                            <?php endif ?>
+                                            <span>
                         <?php echo the_title(); ?>
                     </span>
                     <span>
                         <?php echo $post_description ?>
                     </span>
-                        <a href='<?php echo get_permalink(); ?>'>Read more..</a>
-                    </a>
-                </li>
-            <?php endwhile;
-            ?>
-        </ul>
+                                            <a href='<?php echo get_permalink(); ?>'>Read more..</a>
+                                        </a>
+                                    </li>
+                                <?php endwhile;
+                                ?>
+                            </ul>
 
-        <div class="nav-next alignright"><?php previous_posts_link( '<< previous entries' ); ?></div>
-        <div class="nav-previous alignleft"><?php next_posts_link( 'next entries >>' ); ?></div>
-    <?php endif; endif; ?>
+                            <div class="raw">
+                                <div class="image-tuple-text">
+                                    <hr>
+                                    <div>
+                                        <img src="img/img5.png">
+
+                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
+
+                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
+                                            lksd
+                                            lkf lksd</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/img6.png">
+
+                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
+
+                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
+                                            lksd
+                                            lkf lksd</p>
+                                    </div>
+                                </div>
+                                <div class="image-tuple-text">
+                                    <hr>
+                                    <div>
+                                        <img src="img/img5.png">
+
+                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
+
+                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
+                                            lksd
+                                            lkf lksd</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/img6.png">
+
+                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
+
+                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
+                                            lksd
+                                            lkf lksd</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <span class="previousEntries"><?php previous_posts_link('<< PREVIOUS ENTRIES'); ?></span>
+                                <span class="nextEntries"><?php next_posts_link('NEXT ENTRIES >>'); ?></span>
+                            </div>
+                        <?php endif;
+                    endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>
 </body>
