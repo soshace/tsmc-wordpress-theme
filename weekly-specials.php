@@ -2,7 +2,7 @@
     <h2>OUR WEEKLY SPECIALS</h2>
     <hr>
     <?php
-    query_posts('cat=21$show_posts=2');
+    query_posts('cat=21&posts_per_page=2');
 
     if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="imageContainer">
@@ -10,7 +10,7 @@
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png">
                 <div class="responsiveAddsHolder_box">
                     <div class="responsiveAddsHolder_inside">
-                        <p><?php get_the_content(); ?></p>
+                        <p><?php the_content(); ?></p>
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/symbols.png">
                     </div>
                 </div>
