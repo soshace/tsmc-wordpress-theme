@@ -896,7 +896,7 @@ hr.firstWithoutHeader{
     color: #3d4040;
     font-family: brandon_grotesqueblack;
     font-size: 23px;
-    margin: 0 0 1vw 0;
+    padding: 0 0 1px 0;
     letter-spacing: 0.5px;
     line-height: 1;
 }
@@ -1717,5 +1717,15 @@ hr.yellow{
 
 .departments-page .main-content p {
     padding-bottom: 50px;
+}
+
+.triple-block .imageContainer img{
+    max-height: 203px;
+}
+
+@media (max-width: 1500px) {
+    .triple-block .imageContainer img{
+        max-height: 190px;
+    }
 }
 
