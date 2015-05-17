@@ -17,8 +17,7 @@
             </div>
         </div>
     <?php endwhile;
-    endif;
-    ?>
+    endif;?>
     <hr class="visible-lg visible-md">
     <div class="leftAddsNewsletter visible-lg visible-md">
         <h3>NEWSLETTER</h3>
