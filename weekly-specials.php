@@ -1,28 +1,24 @@
 <div class="leftAdds">
     <h2>OUR WEEKLY SPECIALS</h2>
     <hr>
-    <div class="imageContainer">
-        <div class="responsiveAddsHolder">
-            <img src="img/logo.png">
-            <div class="responsiveAddsHolder_box">
-                <div class="responsiveAddsHolder_inside">
-                    <p>ROYAL GALA APPLES $4.99KG</p>
-                    <img src="img/symbols.png">
+    <?php
+    query_posts('cat=21$show_posts=2');
+
+    if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="imageContainer">
+            <div class="responsiveAddsHolder">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png">
+                <div class="responsiveAddsHolder_box">
+                    <div class="responsiveAddsHolder_inside">
+                        <p><?php get_the_content(); ?></p>
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/symbols.png">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="imageContainer">
-        <div class="responsiveAddsHolder">
-            <img src="img/logo.png">
-            <div class="responsiveAddsHolder_box">
-                <div class="responsiveAddsHolder_inside">
-                    <p>HIGH QUALITY LEAN BEEF MINCE $7.99 KG</p>
-                    <img src="img/symbols.png">
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php endwhile;
+    endif;
+    ?>
     <hr class="visible-lg visible-md">
     <div class="leftAddsNewsletter visible-lg visible-md">
         <h3>NEWSLETTER</h3>
