@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template Name: Site Map
+ */
+
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <?php get_header(); ?>
@@ -9,7 +16,7 @@
 
     <div>
         <div class="headText">
-            <h2>Index Page</h2>
+            <h2>Site Map</h2>
         </div>
     </div>
 

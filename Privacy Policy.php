@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template Name: Privacy Policy
+ */
+
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <?php get_header(); ?>
@@ -9,7 +16,7 @@
 
     <div>
         <div class="headText">
-            <h2>Index Page</h2>
+            <h2>Privacy Policy</h2>
         </div>
     </div>
 

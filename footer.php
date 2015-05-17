@@ -23,7 +23,7 @@
                 <a href="mailto:info@thestandardmarketco.com.au">email us at info@thestandardmarketco.com.au</a>
             </div>
             <div class="footer-other-info">
-                <span><a href="">Sitemap</a></span><span>|</span><span><a href="">Privacy Policy</a></span><span>|</span><span><a href="">&copy 2015 The Standard Market Company</a></span>
+                <span><a href="/site-map">Sitemap</a></span><span>|</span><span><a href="/privacy-policy">Privacy Policy</a></span><span>|</span><span><a href="">&copy 2015 The Standard Market Company</a></span>
             </div>
         </div>
     </div>
