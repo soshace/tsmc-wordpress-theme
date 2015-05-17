@@ -115,10 +115,6 @@ h1, h2, h3, h4, .navbar-default .navbar-nav a, .responsiveAddsHolder_inside p, .
     }
 }
 
-.current_page_item{
-    color: #c7a46f;
-}
-
 .navbar-default .navbar-nav
 {
     margin: 0;
@@ -133,7 +129,7 @@ h1, h2, h3, h4, .navbar-default .navbar-nav a, .responsiveAddsHolder_inside p, .
     padding-bottom: 12px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .navbar-default .navbar-nav > li + li {
         margin-left: 10px;
         margin-right: 10px;
@@ -154,7 +150,7 @@ h1, h2, h3, h4, .navbar-default .navbar-nav a, .responsiveAddsHolder_inside p, .
     margin: 10px 15px 0 15px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .navbar-default .navbar-nav > li {
         margin: 3px 22px 0 22px;
     }
@@ -296,7 +292,7 @@ a.twitter img{
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .image-squares > div {
         width: 100%;
     }
@@ -325,7 +321,7 @@ a.twitter img{
 
 .imageContainer {
     position: relative;
-    display: block;
+    display:block;
 }
 
 .imageContainer img {
@@ -343,7 +339,7 @@ a.twitter img{
     float: right;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .mainArea .logo img{
         width: 171px;
     }
@@ -411,7 +407,7 @@ a.twitter img{
     color: #c7a46f;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .mainArea .headText{
         margin-top: 67px;
     }
@@ -462,7 +458,7 @@ a.twitter img{
     clear:both;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .mainArea hr {
         margin-top: 4px;
 
@@ -536,7 +532,7 @@ a.twitter img{
     margin-right: 11px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .main-content {
         margin-top: 15px;
         margin-bottom: 28px;
@@ -584,7 +580,7 @@ a.twitter img{
     color: #c7a46f;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .triple-block h2 {
         font-size: 17px;
         margin-bottom: 7px;
@@ -688,7 +684,7 @@ a.twitter img{
     display: block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .footer-sign-up{
         margin: 10px 0 0 -10px;
         width: 400px;
@@ -747,7 +743,7 @@ a.twitter img{
     font-weight: 600;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .footer-email-us{
         margin: 8px -10px 0 0;
     }
@@ -787,7 +783,7 @@ a.twitter img{
     margin-right: 5px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .footer-other-info{
         font-size: 9px;
         margin: 8px -14px 0 -36px;
@@ -838,7 +834,7 @@ a.twitter img{
     line-height: 34px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .imageContainer_text {
         font-size: 10px;
         line-height: 26px;
@@ -913,7 +909,7 @@ hr.firstWithoutHeader{
     margin-left: -39px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .responsiveAddsHolder_box {
         height: 117px;
         padding: 13px 13px;
@@ -964,7 +960,7 @@ hr.firstWithoutHeader{
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .leftAdds h2 {
         font-size: 20px;
     }
@@ -1014,7 +1010,7 @@ hr.firstWithoutHeader{
     font-size: 25px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .leftAdds .responsiveAddsHolder_inside p {
         font-size: 18px;
     }
@@ -1073,7 +1069,7 @@ hr.firstWithoutHeader{
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .mainArea .rightBlog .headText h1 {
         font-size: 34px;
     }
@@ -1108,7 +1104,8 @@ hr.firstWithoutHeader{
 
 .image-tuple-text img {
     margin-top: 10px;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .leftAdds .newsletter-signup .newsletter-btn{
@@ -1152,7 +1149,7 @@ hr.firstWithoutHeader{
     display: block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .leftAdds .newsletter-signup label{
         font-size: 11px;
     }
@@ -1217,6 +1214,12 @@ hr.firstWithoutHeader{
 
 .mainArea .rightBlog hr{
     margin-bottom: 10px;
+}
+
+.mainArea .rightBlog .image-tuple-text p{
+    height: 84px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .rightCakes .main-content img.headImage{
@@ -1328,11 +1331,244 @@ hr.firstWithoutHeader{
     padding-bottom: 73px;
 }
 
-@media (max-width: 1000px) {
+.catering_data{
+    margin-top:120px;
+}
+
+.main-content .productList ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.main-content .productList li{
+    list-style-type: none;
+}
+
+@media (max-width: 999px) {
     .catering .headData h1 {
         font-size: 28px;
     }
     .catering .headData .headText {
         margin-top: 28px;
     }
+    .catering ul.headLinks li > a{
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    .catering ul.headLinks{
+        margin: 0px 0 0 -7px;
+    }
+    .catering_data {
+        margin-top: 0;
+    }
+    .catering .rightCakes {
+        margin-top: 7px;
+    }
+    .catering .headButtons button {
+        margin: 0 2px;
+        width: 77px;
+        padding: 2px 11px;
+        font-size: 10px;
+        height: 22px;
+    }
+    .catering hr {
+        margin-top: 8px;
+    }
+    .catering .main-content {
+        margin-top: 0;
+    }
+    .rightCakes .main-content img.headImage {
+        margin-top: 7px;
+        margin-bottom: 2px;
+    }
+    .catering .leftSmallPart {
+        margin-top: 44px;
+    }
+    .catering .leftSmallPart img {
+        width: 77px;
+        float: right;
+    }
+    .catering .leftSmallPart h3{
+        font-size: 20px;
+        padding-top: 58px;
+    }
+    .catering .leftSmallPart p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .rightCakes .main-content .productList .productContainer p{
+        line-height: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .catering .headData h1 {
+        font-size: 39px;
+    }
+    .catering .headData .headText {
+        margin-top: 78px;
+    }
+    .catering ul.headLinks li > a {
+        margin-left: 1.9vw;
+        margin-right: 1.9vw;
+        font-size: 2.9vw;
+        letter-spacing: 0.05vw;
+    }
+    .catering .logo {
+        float: right;
+        position: absolute;
+        right: 29px;
+    }
+    .catering ul.headLinks {
+        margin: 17px 0 0 -7px;
+    }
+    .headButtons{
+        float: right;
+        margin: 22px 0 9px 0;
+    }
+    .catering .headButtons button {
+        margin: 0 3px;
+        width: 90px;
+        padding: 4px 11px;
+        font-size: 12px;
+        height: 27px;
+    }
+    .catering .leftSmallPart {
+        margin-top: 15px;
+    }
+    .catering .leftSmallPart h3 {
+        font-size: 20px;
+        padding-top: 12px;
+        margin-left: 111px;
+    }
+    .catering .leftSmallPart img {
+        width: 100px;
+        float: left;
+    }
+    .catering .leftSmallPart p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 111px;
+        margin-top: 23px;
+        line-height: 23px;
+        margin-bottom: 0;
+    }
+    .catering .rightCakes {
+        margin-top: 0;
+    }
+    .rightCakes .main-content img.headImage {
+        margin-bottom: 15px;
+    }
+
+    .myColXs6{
+        width: 50%;
+        padding: 0 13px;
+        float: left;
+        margin-bottom: 25px;
+    }
+    .rightCakes .main-content img.headImage {
+        padding: 0 15px 0 13px;
+    }
+    .catering {
+        padding-bottom: 35px;
+    }
+}
+
+.catering .main-content p {
+    font-size: 13px;
+}
+
+@media (min-width: 1500px) {
+    .image-tuple-text img {
+        height: 256px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .image-tuple-text img {
+        height: 216px;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-tuple-text img {
+        height: 17vw;
+    }
+}
+
+.catering_click_on .productContainer img{
+    width: 100%;
+}
+
+.catering_click_on .productContainer p {
+    width: 100%;
+    background-color: #3d4040;
+    border-radius: 0 0 10px 10px;
+    font-family: brandon_grotesquemedium;
+    font-weight: 100;
+    height: 43px;
+    color: white;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    display: -moz-box;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    line-height: 16px;
+    padding: 0 20px;
+}
+
+.catering_click_on .productContainer{
+    margin-top: 14px;
+}
+
+.catering_click_on .inputQuantity{
+    float: right;
+}
+
+
+.catering_click_on .productPrice p{
+    float: left;
+}
+
+.catering_click_on .inputQuantity input{
+    width: 100px;
+    margin: 0;
+    padding: 5px 0 5px 6px;
+    background-color: white;
+    border: 1px solid #3d4040;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3d4040;
+    vertical-align: top;
+    height: 25px;
+    font-family: museosans;
+}
+
+.contact-page {
+    padding: 127px 0 30px 0;
+}
+
+.contact-page h5 {
+    color: #c7a46f;
+}
+
+.contact-page .form-control {
+    border-color: #8d908d;
+}
+
+.contact-page .form-control[type="text"],
+.contact-page .form-control[type="email"],
+.contact-page select.form-control {
+    height: 29px;
+}
+
+.contact-page button {
+    background: #363a35;
+    color: #fff;
+    float: right;
+    border: none;
 }
