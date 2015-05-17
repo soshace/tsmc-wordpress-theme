@@ -66,76 +66,32 @@ if (!empty($top_post)) {
                         ));
 
                         if (have_posts()) :?>
-                            <ul>
-                                <?php
-                                while (have_posts()) : the_post();
-                                    $post_cover = get_field('cover');
-                                    $post_description = get_field('description');
-                                    ?>
-                                    <li>
-                                        <a href="<?php the_permalink(); ?>">
-                                            <?php if (!empty($post_cover)): ?>
-                                                <img src="<?php echo $post_cover['url']; ?>"/>
-                                            <?php endif ?>
-                                            <span>
-                        <?php echo the_title(); ?>
-                    </span>
-                    <span>
-                        <?php echo $post_description ?>
-                    </span>
-                                            <a href='<?php echo get_permalink(); ?>'>Read more..</a>
-                                        </a>
-                                    </li>
-                                <?php endwhile;
-                                ?>
-                            </ul>
-
                             <div class="raw">
                                 <div class="image-tuple-text">
                                     <hr>
-                                    <div>
-                                        <img src="img/img5.png">
+                                    <ul>
+                                        <?php
+                                        while (have_posts()) : the_post();
+                                            $post_cover = get_field('cover');
+                                            $post_description = get_field('description');
+                                            ?>
+                                            <li>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php if (!empty($post_cover)): ?>
+                                                        <img src="<?php echo $post_cover['url']; ?>"/>
+                                                    <?php endif ?>
+                                                    <h3><?php echo the_title(); ?></h3>
 
-                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
-
-                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
-                                            lksd
-                                            lkf lksd</p>
-                                    </div>
-                                    <div>
-                                        <img src="img/img6.png">
-
-                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
-
-                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
-                                            lksd
-                                            lkf lksd</p>
-                                    </div>
+                                                    <p><?php echo $post_description ?></p>
+                                                </a>
+                                            </li>
+                                        <?php endwhile;
+                                        ?>
+                                    </ul>
+                                    <span class="entries next"><?php next_posts_link('NEXT ENTRIES >>'); ?></span>
+                                    <span
+                                        class="entries previous"><?php previous_posts_link('<< PREVIOUS ENTRIES'); ?></span>
                                 </div>
-                                <div class="image-tuple-text">
-                                    <hr>
-                                    <div>
-                                        <img src="img/img5.png">
-
-                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
-
-                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
-                                            lksd
-                                            lkf lksd</p>
-                                    </div>
-                                    <div>
-                                        <img src="img/img6.png">
-
-                                        <h3>RECIPE: CAREME TRADITIONAL PASTRY</h3>
-
-                                        <p>jflkdjslk fls lf s dlk flk sjd jflk sdk flkds lkf kls lkdf jlk sdl fl sjdl jf
-                                            lksd
-                                            lkf lksd</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <span class="previousEntries"><?php previous_posts_link('<< PREVIOUS ENTRIES'); ?></span>
-                                <span class="nextEntries"><?php next_posts_link('NEXT ENTRIES >>'); ?></span>
                             </div>
                         <?php endif;
                     endif; ?>
